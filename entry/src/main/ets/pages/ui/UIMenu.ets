@@ -1,11 +1,11 @@
 import prompt from '@ohos.promptAction'
 import router from '@ohos.router'
-import { PAGE_UI_IMAGE_DEMO, PAGE_UI_TEXT_DEMO } from '../../common/Constant'
+import { PAGE_UI_IMAGE_DEMO, PAGE_UI_TAB_DEMO, PAGE_UI_TEXT_DEMO } from '../../common/Constant'
 
 @Entry
 @Component
 struct UIMenu {
-  private uiMenu: string[] = ['Text', 'Image', 'Video', 'HTTP', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5']
+  private uiMenu: string[] = ['Text', 'Image', 'Video', 'HTTP', 'TAB', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5']
 
   build() {
 
@@ -47,6 +47,13 @@ struct GridItemView {
         case 'Image': {
           router.pushUrl({ url: PAGE_UI_IMAGE_DEMO })
           break
+
+
+        }
+        case 'TAB': {
+          router.pushUrl({ url: PAGE_UI_TAB_DEMO })
+          break
+
 
         }
         default:

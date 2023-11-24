@@ -4,6 +4,7 @@
     "pages/demo/Calculator",
     "pages/ui/UIMenu",
     "pages/ui/UITextDemo",
-    "pages/ui/UIImageDemo"
+    "pages/ui/UIImageDemo",
+    "pages/ui/UITabDemo"
   ]
 }
